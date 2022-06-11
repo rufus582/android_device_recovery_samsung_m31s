@@ -11,5 +11,5 @@ mka recoveryimage
 ```
 
 ## Code used from
-https://github.com/Yilliee/recovery_m31s
+https://github.com/Yilliee/recovery_m31s  
 https://github.com/Yilliee/recovery_universal9611-common
