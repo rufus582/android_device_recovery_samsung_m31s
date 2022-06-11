@@ -11,7 +11,8 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/m31s
+SHRP_DEVICE_CODE := m31s
+SHRP_PATH := device/samsung/$(SHRP_DEVICE_CODE)
 
 # Architecture
 TARGET_ARCH := arm64
@@ -35,9 +36,9 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Kernel
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/zImage
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
-BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilts/dtb
+TARGET_PREBUILT_KERNEL := $(SHRP_PATH)/prebuilts/zImage
+BOARD_PREBUILT_DTBOIMAGE := $(SHRP_PATH)/prebuilts/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(SHRP_PATH)/prebuilts/dtb
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -103,6 +104,16 @@ TW_INCLUDE_FB2PNG := true
 TW_INCLUDE_RESETPROP := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_RECOVERY_FSTAB := $(SHRP_PATH)/recovery/root/system/etc/recovery.fstab
+TARGET_SYSTEM_PROP += $(SHRP_PATH)/system.prop
+
+#SHRP Configs
+SHRP_MAINTAINER := RufusIR
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := /dev/block/platform/13520000.ufs/by-name/recovery
+SHRP_OTG := /usb_otg
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_DARK := true
+SHRP_REC_TYPE := Normal
 
