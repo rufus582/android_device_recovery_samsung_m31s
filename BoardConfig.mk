@@ -110,10 +110,14 @@ TARGET_SYSTEM_PROP += $(SHRP_PATH)/system.prop
 #SHRP Configs
 SHRP_MAINTAINER := RufusIR
 SHRP_DEVICE_TYPE := A/B
-SHRP_REC := /dev/block/platform/13520000.ufs/by-name/recovery
+SHRP_REC := /dev/block/by-name/recovery
 SHRP_OTG := /usb_otg
 SHRP_EXPRESS := true
 SHRP_EXPRESS_USE_DATA := true
 SHRP_DARK := true
 SHRP_REC_TYPE := Normal
-
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
+SHRP_FONP_2 := /sys/devices/virtual/camera/flash/rear_torch_flash
+SHRP_FONP_3 := 
