@@ -7,7 +7,7 @@ To build:
 ```sh
 . build/envsetup.sh
 lunch twrp_m31s-eng
-mka recoveryimage
+mka recoveryimage -j$(nproc)
 ```
 
 ## Code used from
