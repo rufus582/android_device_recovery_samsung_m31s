@@ -34,7 +34,6 @@ export_build_vars(){
 	# Skip the selinux enforce patches for a samsung device.
 	export OF_NO_SAMSUNG_SPECIAL=1
 	
-	export CURR_DEVICE=m31s
 	export OF_MAINTAINER="RufusIR"
 
 	# Only set this to 1, 2 or 3.
