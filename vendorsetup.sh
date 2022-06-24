@@ -44,7 +44,7 @@ export_build_vars(){
 	### Extra build vars ###
 	export OF_USE_MAGISKBOOT=1
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
-	export OF_FL_PATH1="/system/flashlight"
+	export OF_FL_PATH1="/sys/devices/virtual/camera/flash/rear_flash"
 	export OF_FL_PATH2=""
 	export OF_FLASHLIGHT_ENABLE=1
 	export OF_HIDE_NOTCH=1
@@ -53,7 +53,7 @@ export_build_vars(){
 	export OF_USE_SYSTEM_FINGERPRINT=1
 	export OF_USE_TWRP_SAR_DETECT=1
 	export OF_QUICK_BACKUP_LIST="/super;/data;/boot;/vbmeta;/vbmeta_samsung;/dtbo;/efs;/sec_efs;/modem"
-	export FOX_ENABLE_APP_MANAGER=1
+	export FOX_ENABLE_APP_MANAGER=0
 	export OF_STATUS_INDENT_LEFT="48"
 	export OF_STATUS_INDENT_RIGHT="48"
 	export OF_STATUS_H="88"
