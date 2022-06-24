@@ -1,5 +1,8 @@
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
 # Inherit from common tree
-$(call inherit-product, device/samsung/m31s/common.mk)
+$(call inherit-product, device/samsung/m31s/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_m31s
