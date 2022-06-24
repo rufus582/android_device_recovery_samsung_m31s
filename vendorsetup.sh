@@ -44,7 +44,7 @@ export_build_vars(){
 	### Extra build vars ###
 	export OF_USE_MAGISKBOOT=1
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
-	export OF_FL_PATH1="/sys/devices/virtual/camera/flash/rear_flash"
+	export OF_FL_PATH1="/system/flashlight"
 	export OF_FL_PATH2=""
 	export OF_FLASHLIGHT_ENABLE=1
 	export OF_HIDE_NOTCH=1
